@@ -15,12 +15,16 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        int valor = 0;
-        double N = sc.nextDouble();
-        System.out.println("NOTAS:");
-        valor = (int) N/100;
-        System.out.printf("%d nota(s) de R$ 100.00\n", valor);
-        
+        double total = sc.nextDouble();
+        int notas = (int) total;
+        int moedas = (int) ((total - notas)*100);
+        int notasDe100 = notas/100;
+        notas -= notasDe100*100;
+        int notasDe50 = notas/50;
+        notas -= notasDe50*50;
+        int notasDe20 = notas/20;
+        notas -= notasDe20*20;
+        int ;
         sc.close();
     }
  
