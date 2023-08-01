@@ -10,42 +10,48 @@ import java.util.Scanner;
  * El nombre de la clase debe ser "Main" para que su solución ejecutar
  */
 public class Main {
-
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        String palvra1 = sc.next();
-        String palvra2 = sc.next();
-        String palvra3 = sc.next();
-        if (palvra1 == "vertebrado") {
-            if (palvra2 == "ave") {
-                if (palvra3 == "carnivoro") {
+        String palavra1 = sc.next();
+        String palavra2 = sc.next();
+        String palavra3 = sc.next();
+        if(palavra1 == "vertebrado"){
+            if(palavra2 == "ave"){
+                if(palavra3 == "carnivoro"){
                     System.out.println("aguia");
-                } else {
+                }
+                else{
                     System.out.println("pomba");
                 }
-            } else {
-                if (palvra3 == "onivoro") {
+            }
+            else{
+                if(palavra3 == "onivoro"){
                     System.out.println("homem");
-                } else {
+                }
+                else{
                     System.out.println("vaca");
                 }
             }
-        } else {
-            if (palvra2 == "inseto") {
-                if (palvra3 == "hematofago") {
+
+        }
+        else{
+            if(palavra2 == "inseto"){
+                if(palavra3 == "hematofago"){
                     System.out.println("pulga");
-                } else {
+                }
+                else{
                     System.out.println("lagarta");
                 }
-            } else {
-                if (palvra3 == "hematofago") {
-                    System.out.println("sanguesuga");
-                } else {
+            }
+            else{
+                if(palavra3 == "hematofago"){
+                    System.out.println("sanguessuga");
+                }
+                else{
                     System.out.println("minhoca");
                 }
             }
         }
         sc.close();
     }
-
 }
