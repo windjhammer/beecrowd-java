@@ -13,7 +13,8 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        int x = 0, y = 0;
+        int x = sc.nextInt(); 
+        int y = sc.nextInt();
         for (int i = 1; i <= y; i++) {
             System.out.print(i);
             if (i % x == 0)
